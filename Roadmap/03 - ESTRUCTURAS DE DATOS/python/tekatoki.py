@@ -11,6 +11,7 @@ by default in your language.
 - Use operation of insertions, earase, update, sort.
 
 Difficulty extra (optional):
+
 Create a contacts agenda on the terminal
 - Must implement fucnctionality of search, insection, update and 
 delete contacts
@@ -21,3 +22,25 @@ ask the necessary data
 more than 11 digits. 
 - You must put an operation that finish the program
 '''
+
+
+def simple_exercise()->None:
+    ex_list:list[str] = ['h', '2', 'hi']
+    ex_tuple:tuple[int] = [23, 51, 24]
+    ex_set:set[float] = {73.0, 3.4, 3.1415}
+    ex_dict:dict = {'name': 'Jack', 'lastname': 'Bluepark', 'age': 21}
+
+def chose_function(function_1:function, function_2:function, key_function:int=0)-> None:
+    if 0 == key_function:
+        function_1()
+    elif 1 == key_function:
+        function_2()
+    else:
+        print('Introduce a valid key value <in range 0,1>')
+
+
+def main()->None:
+    print()
+
+if __name__ == '__main__':
+    main()
